@@ -160,12 +160,18 @@
 		  <canvas id="temperatureChartCarousel"></canvas>
 		</div>
 		<div class="carousel-item align-center">
-		  <h2>Pompe</h2>
-		  <span class="status">Pump Status Placeholder</span>
+			<h2>Pompe</h2>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="pumpSwitch">
+				<label class="custom-control-label" for="pumpSwitch">Pompe éteinte</label>
+			</div>
 		</div>
 		<div class="carousel-item align-center">
-		  <h2>Fenêtre</h2>
-		  <span class="status">Window Status Placeholder</span>
+			<h2>Fenêtre</h2>
+			<div class="custom-control custom-switch">
+				<input type="checkbox" class="custom-control-input" id="windowSwitch">
+				<label class="custom-control-label" for="windowSwitch">Fenêtre fermée</label>
+			</div>
 		</div>
 	  </div>
 	  <a class="carousel-control-prev" href="#controlsCarousel" role="button" data-slide="prev">

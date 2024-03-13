@@ -86,6 +86,30 @@ h2
 {
 	height: 350px;
 }
+
+.custom-control-input:checked ~ .custom-control-label::before 
+{
+	background-color: #336633 !important;
+	opacity: 0.9;
+	border-color: #336633;
+}
+  
+.custom-control-input:checked ~ .custom-control-label::after 
+{
+	background-color: #ffffff !important;
+}
+
+.custom-control-input:not(:checked) ~ .custom-control-label::before 
+{
+	background-color: #adb5bd;
+	opacity: 0.5;
+	border-color: #adb5bd;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before 
+{
+	box-shadow: 0 0 0 1px #e5e5cc, 0 0 0 3px #336633;
+}
 /* END OF BOOTSTRAP CUSTOMIZATION */
 
 /* Viewing on small screen */
